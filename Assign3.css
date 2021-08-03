@@ -1,0 +1,198 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #FFDFD3;
+}
+
+ul {
+	list-style: none;
+	display: flex;
+	width: 400px;
+	justify-content: space-between;
+
+}
+a{
+	text-decoration: none;
+	color: black;
+	font-size: 1.5rem;
+	padding: 20px 10px;
+
+}
+nav{
+	background-color: #957DAD;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+li{
+	padding: 15px 5px;
+	display: flex;
+
+}
+@media screen and (max-width: 620px){
+	li,ul,nav{
+		flex-direction: column;
+		align-items: center;
+	}
+}
+/*done */
+
+section{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 75vw;
+
+    margin:30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+figure{
+    width: 300px;
+    border:1px solid #FEC8D8;
+    margin:20px;
+    text-align: center;
+    box-shadow: 0px 0px 3px rgb(104,104,104);
+    transition: 100ms;
+}
+
+figure:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+figure img{
+    height: 200px;
+    width: 100%;
+}
+
+figcaption button{
+    padding: 10px 20px;
+    margin:10px;
+    font-size: 16px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    background:#ccc;
+}
+
+figcaption button:hover{
+    background: #FEC8D8;
+    color:white;
+    cursor: pointer;
+}
+
+figcaption p{
+    font-weight: 300;
+    background-color: #ccc;
+} 
+
+
+form{
+	background-color: #957DAD;
+	display: flex;
+	align-items: center;
+	font-family: Arial, Helvetica, sans-serif;
+
+
+}
+form  label{
+background: #FEC8D8;
+padding: 20px 20px;
+    margin:20px;
+    font-size: 16px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+}
+form input{
+	background:  #FFDFD3;
+padding: 10px 10px;
+    margin:10px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+}
+@media screen and (max-width: 620px){
+	form,label,input{
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+
+.logo:hover{
+	background-color: #ccc;
+	cursor: pointer;
+	transform:scale(1.5); 
+
+}
+.india:hover{
+	background-color: #ccc;
+	cursor: pointer;
+
+
+}
+.slide{
+	height: 200px;
+    width: 200px;
+    margin:20px auto;
+    animation:1s infinite ease-in alternate slideleft;
+}
+@keyframes bounce {
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(565px);
+    }
+
+}
+
+
+#slider {
+	overflow: hidden;
+}
+#slider figure {
+	position: relative;
+	width: 400%;
+	height: 400%
+	margin: 0;
+	left: 0;
+	animation: 20s slider infinite;
+}
+#slider figure img {
+	width: 10%;
+	float: left;
+}
+
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}
